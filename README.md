@@ -1,4 +1,4 @@
-#README - The Komputer Store
+# The Komputer Store
 
 The Komputer store is a simple store for buying computers.
 The Komputer Store has it own bank, where the user can see the balance, and get a loan.
