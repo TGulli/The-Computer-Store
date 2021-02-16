@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Komputer Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/model.css">
+</head>
+
+<header>
+    <h2>Komputer Store</h2>
+</header>
+
+
+<body>
+
+<div class="row">
+    <div class="column">
+        <h3>Bank</h3>
+        <p>Balance: <span style="float:right" id="bank-balance"></span></p>
+        <p><span style="float:left" id="bank-loan"></span></p>
+        <p><span style="float:right" id="bank-loan-value"></span></p>
+        <br><br>
+        <div class="grid">
+            <button class="popup greenButton" id="loan_btn">Get loan</button>
+
+            <!-- The Modal -->
+            <div id="loan-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-loan-modal" class="close">&times;</span>
+                    <p>Write loan amount.</p><br>
+                    <label for="input-loan"></label><input type="number" id="input-loan"><br><br>
+                    <button class="greenButton" id="confirm-loan-modal-btn">Get loan</button>
+                    <p><span id="loan-msg"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <h3>Work</h3>
+        <p>Pay: <span style="float:right" id="pay-balance"></span></p>
+        <div class="grid">
+            <div class="twoButtons">
+                <div class="buttonColumn">
+                    <button class="yellowButton" id="bank-btn">Bank</button>
+                </div>
+                <div class="buttonColumn">
+                    <button class="blueButton" id="work-btn">Work</button>
+                </div>
+            </div>
+            <button class="redButton" id="repay-loan-btn">Repay loan</button>
+        </div>
+    </div>
+    <div class="column">
+        <h3>Laptops</h3>
+
+        <label for="laptop-options"></label>
+        <select name="laptop-options" id="laptop-options">
+            <option value="default">-- Choose a laptop --</option>
+        </select>
+
+        <h4>Features:</h4>
+        <ul id="laptop-features"></ul>
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="column">
+        <div class="imageContainer">
+            <img id="laptop-image" src="" alt="Laptop image" width="100%">
+        </div>
+    </div>
+    <div class="column">
+        <h2 id="laptop-title"></h2>
+        <p id="laptop-description"></p>
+    </div>
+    <div class="column">
+        <div id="center">
+            <h2 id="laptop-price"></h2>
+
+            <button class="popup blueButton" id="buy-laptop-btn">BUY NOW</button>
+            <!-- The Modal -->
+
+            <div id="buy-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-buy-modal" class="close">&times;</span>
+                    <h2 id="buy-laptop-heading"></h2>
+                    <p id="buy-laptop-text"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/bank.js"></script>
+<script src="js/work.js"></script>
+<script src="js/laptopClass.js"></script>
+<script src="js/laptop.js"></script>
+</body>
+</html>
